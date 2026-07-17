@@ -1,0 +1,29 @@
+/* Scroll reveal */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(34px);
+  transition: opacity .8s var(--ease), transform .8s var(--ease);
+}
+[data-reveal].in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] { opacity: 1; transform: none; transition: none; }
+  .portrait-badge, .dot-live, .scroll-cue i, .preloader-mark span { animation: none !important; }
+  html { scroll-behavior: auto; }
+}
+
+/* Fade helpers applied via JS delay */
+[data-reveal-delay] { transition-delay: var(--delay, 0ms); }
+
+/* Card entrance stagger for grids populated by JS */
+.project-card, .service-card, .bd-card {
+  opacity: 0;
+  transform: translateY(24px);
+  animation: cardIn .7s var(--ease) forwards;
+}
+@keyframes cardIn {
+  to { opacity: 1; transform: translateY(0); }
+}
