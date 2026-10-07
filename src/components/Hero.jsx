@@ -152,9 +152,8 @@ export default function Hero({ theme }) {
           </p>
 
           <p className="hero-desc">
-            Full Stack Web &amp; App Developer building fast, elegant, and scalable
-            products with React.js, Node.js, and Firebase — from pixel-perfect interfaces
-            to production-ready backends.
+            Building fast, modern, and reliable digital products with React,
+            Node.js, and Firebase.
           </p>
 
           <div className="hero-cta">

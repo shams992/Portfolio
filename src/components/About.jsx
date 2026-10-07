@@ -2,11 +2,9 @@ import React from "react";
 
 export default function About() {
   const infoItems = [
-    { label: "Name", value: "Shams Dev" },
     { label: "Role", value: "Full Stack Developer" },
-    { label: "Experience", value: "8 Months Experience" },
-    { label: "Education", value: "BS — English Language & Literature" },
-    { label: "Core Focus", value: "React.js, Node.js & Firebase" },
+    { label: "Experience", value: "8 Months" },
+    { label: "Core Focus", value: "React, Node.js & Firebase" },
     { label: "Status", value: "Available for Projects" }
   ];
 
@@ -31,7 +29,7 @@ export default function About() {
               <div className="about-img-card">
                 <i className="fa-solid fa-mug-hot"></i>
                 <p>
-                  Currently building <strong>Baloch Export Hub</strong> &amp; contributing at <strong>BalochDev</strong>
+                  Building <strong>Baloch Export Hub</strong> &amp; contributing at <strong>BalochDev</strong>
                 </p>
               </div>
             </div>
@@ -39,21 +37,16 @@ export default function About() {
 
           <div className="about-content">
             <p className="about-lead">
-              Hello, I'm <strong>Shams Dev</strong>, a passionate Full Stack Web &amp; App
-              Developer dedicated to engineering modern, responsive, and high-performance
-              digital products.
+              Building modern web experiences with clean code and thoughtful design.
             </p>
             <p>
-              I specialize in creating attractive user interfaces, interactive web
-              experiences, and scalable backend solutions using modern React.js, Node.js,
-              and Firebase. I have developed multiple production-grade projects ranging
-              from regional commerce platforms like <strong>Baloch Export Hub</strong> to
-              offline management tools and real-time interactive applications.
+              Full Stack Web &amp; App Developer focused on high-performance digital products,
+              specializing in React.js, Node.js, and Firebase. I build fast, responsive interfaces
+              backed by scalable architectures.
             </p>
             <p>
-              I continuously master contemporary web technologies and strive to build software
-              that is elegant, fast, and remarkably user-friendly — code that performs as
-              smoothly as it looks.
+              Active contributor at <strong>BalochDev</strong> and engineer behind <strong>Baloch Export Hub</strong>,
+              delivering production-ready solutions for commerce and regional technology.
             </p>
 
             <div className="about-info-grid">
@@ -65,21 +58,12 @@ export default function About() {
               ))}
             </div>
 
-            <div className="about-cta-group">
-              <a
-                href="/Shams-Dev-Resume.pdf"
-                download="Shams-Dev-Resume.pdf"
-                className="btn btn-primary"
-              >
-                <i className="fa-solid fa-download"></i> Download CV
+            <div className="about-action-row">
+              <a href="#projects" className="btn btn-primary">
+                <i className="fa-solid fa-diagram-project"></i> View Projects
               </a>
-              <a
-                href="/Shams-Dev-Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-outline"
-              >
-                <i className="fa-solid fa-file-pdf"></i> View Resume
+              <a href="#contact" className="btn btn-outline">
+                <i className="fa-regular fa-paper-plane"></i> Let's Talk
               </a>
             </div>
           </div>

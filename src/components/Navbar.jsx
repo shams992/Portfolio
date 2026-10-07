@@ -23,7 +23,7 @@ export default function Navbar({ activeSection, theme, toggleTheme }) {
   const navLinks = [
     { label: "Home", href: "#home", id: "home" },
     { label: "About", href: "#about", id: "about" },
-    { label: "Resume", href: "#resume", id: "resume" },
+    { label: "Experience", href: "#experience", id: "experience" },
     { label: "Skills", href: "#skills", id: "skills" },
     { label: "Projects", href: "#projects", id: "projects" },
     { label: "Services", href: "#services", id: "services" },
@@ -78,8 +78,9 @@ export default function Navbar({ activeSection, theme, toggleTheme }) {
               href="/Shams-Dev-Resume.pdf"
               download="Shams-Dev-Resume.pdf"
               className="btn btn-ghost nav-resume"
+              title="Download CV"
             >
-              <i className="fa-solid fa-download"></i> Resume
+              <i className="fa-solid fa-download"></i> Download CV
             </a>
             <button
               className={`hamburger ${mobileMenuOpen ? "open" : ""}`}

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Resume from "./components/Resume";
+import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Services from "./components/Services";
@@ -39,14 +39,14 @@ export default function App() {
   const showToast = useCallback((message, icon = "fa-solid fa-circle-check") => {
     setToast({ show: true, message, icon });
     const timer = setTimeout(() => {
-      setToast({ show: false, message: "", icon: "" });
+      setToast({ show: false, message, icon: "" });
     }, 3800);
     return () => clearTimeout(timer);
   }, []);
 
   // Scroll spy to highlight active section in Navbar
   useEffect(() => {
-    const sectionIds = ["home", "about", "resume", "skills", "projects", "services", "contact"];
+    const sectionIds = ["home", "about", "experience", "skills", "projects", "services", "contact"];
 
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -80,7 +80,7 @@ export default function App() {
       <main>
         <Hero theme={theme} />
         <About />
-        <Resume />
+        <Experience />
         <Skills />
         <Projects />
         <Services />
