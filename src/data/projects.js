@@ -23,22 +23,22 @@ export const projectsData = [
   {
     id: "balochdev",
     title: "BalochDev",
-    tagline: "Empowering language, culture & regional tech",
+    tagline: "AI, web & mobile studio empowering regional tech",
     status: "Working on BalochDev",
     ongoing: true,
-    badge: "Ongoing Project",
+    badge: "Technology Studio",
     category: "Initiative",
     urlTag: "balochdev.com",
-    desc: "An ongoing project focused on technology, digital products, and solutions related to Balochi language, culture, and businesses.",
-    detailedDesc: "BalochDev is an active initiative building foundational software ecosystems, localization frameworks, digital dictionaries, and modern web products tailored for Balochi cultural heritage, regional commerce, and next-generation developers. Currently focused on digital infrastructure, scalable frontend architectures, and community tech solutions.",
-    img: "/images/balochdev-simple.jpg",
-    tech: ["React.js", "JavaScript", "Localization Tools", "Frontend Architecture", "UI/UX Systems"],
+    desc: "A technology studio creating modern web, mobile, and AI solutions, empowering regional commerce and cultural digital products.",
+    detailedDesc: "BalochDev is a forward-thinking digital product studio building high-performance web applications, mobile platforms, and AI-powered tools that solve real-world problems. Flagship initiatives include Baloch Export Hub, modern component architectures, and regional digital infrastructure.",
+    img: "/images/balochdev-brand.png",
+    tech: ["React.js", "JavaScript", "Supabase", "Cloud Architecture", "UI/UX Systems"],
     demo: "https://balochdev.com",
     code: "https://github.com/shams992",
     highlights: [
-      "Active ecosystem for Balochi language and digital tools",
-      "Component libraries and modern localized interfaces",
-      "Collaborative development with passionate regional engineers"
+      "Official technology brand and digital product studio",
+      "Building high-performance web applications and AI tools",
+      "Creators of Baloch Export Hub for regional commerce"
     ]
   },
   {

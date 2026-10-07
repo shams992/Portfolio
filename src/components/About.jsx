@@ -22,12 +22,12 @@ export default function About() {
           <div className="about-visual">
             <div className="about-img-wrap">
               <img
-                src="/images/balochdev-simple.jpg"
-                alt="Modern developer workspace and clean code"
+                src="/images/balochdev-brand.png"
+                alt="BalochDev — Official Technology Studio & Brand"
                 loading="lazy"
               />
               <div className="about-img-card">
-                <i className="fa-solid fa-mug-hot"></i>
+                <i className="fa-solid fa-layer-group"></i>
                 <p>
                   Building <strong>Baloch Export Hub</strong> &amp; contributing at <strong>BalochDev</strong>
                 </p>

@@ -136,10 +136,6 @@ export default function Hero({ theme }) {
 
       <div className="container hero-inner">
         <div className="hero-left">
-          <p className="hero-eyebrow">
-            <span className="dot-live"></span> Available for freelance &amp; collaboration
-          </p>
-
           <h1 className="hero-title">
             Crafting Beautiful<br />
             Digital <span className="text-gradient">Experiences</span><br />
@@ -152,8 +148,8 @@ export default function Hero({ theme }) {
           </p>
 
           <p className="hero-desc">
-            Building fast, modern, and reliable digital products with React,
-            Node.js, and Firebase.
+            Building modern, responsive and reliable digital products using React,
+            Node.js and modern web technologies.
           </p>
 
           <div className="hero-cta">
@@ -224,11 +220,6 @@ export default function Hero({ theme }) {
           </div>
         </div>
       </div>
-
-      <a href="#about" className="scroll-cue" aria-label="Scroll down to About section">
-        <span>Scroll</span>
-        <i className="fa-solid fa-chevron-down"></i>
-      </a>
     </section>
   );
 }
