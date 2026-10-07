@@ -22,6 +22,6 @@ export const testimonialsData = [
 export const statsData = [
   { count: 6, suffix: "+", label: "Projects Completed" },
   { count: 20, suffix: "+", label: "Technologies Used" },
-  { count: 15, suffix: "+", label: "Happy Clients" },
+  { count: 6, suffix: "+", label: "Happy Clients" },
   { count: 8, suffix: " Months", label: "Professional Experience" }
 ];

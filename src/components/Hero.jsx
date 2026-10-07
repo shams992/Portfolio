@@ -147,7 +147,7 @@ export default function Hero({ theme }) {
           </h1>
 
           <p className="hero-role">
-            I'm Shams Bashir — <span className="typed-role">{typedRole}</span>
+            I'm Shams Dev — <span className="typed-role">{typedRole}</span>
             <span className="typed-cursor">|</span>
           </p>
 
@@ -204,7 +204,7 @@ export default function Hero({ theme }) {
           <div className="portrait-frame">
             <img
               src="/images/shms.png"
-              alt="Shams Bashir — Full Stack Web & App Developer"
+              alt="Shams Dev — Full Stack Web & App Developer"
               className="portrait-img"
               loading="eager"
             />

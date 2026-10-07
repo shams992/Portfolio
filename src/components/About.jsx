@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   const infoItems = [
-    { label: "Name", value: "Shams Bashir" },
+    { label: "Name", value: "Shams Dev" },
     { label: "Role", value: "Full Stack Developer" },
     { label: "Experience", value: "8 Months Experience" },
     { label: "Education", value: "BS — English Language & Literature" },
@@ -39,7 +39,7 @@ export default function About() {
 
           <div className="about-content">
             <p className="about-lead">
-              Hello, I'm <strong>Shams Bashir</strong>, a passionate Full Stack Web &amp; App
+              Hello, I'm <strong>Shams Dev</strong>, a passionate Full Stack Web &amp; App
               Developer dedicated to engineering modern, responsive, and high-performance
               digital products.
             </p>
@@ -65,13 +65,23 @@ export default function About() {
               ))}
             </div>
 
-            <a
-              href="/Shams-Bashir-Resume.pdf"
-              download="Shams-Bashir-Resume.pdf"
-              className="btn btn-primary"
-            >
-              <i className="fa-solid fa-arrow-down"></i> Download Resume
-            </a>
+            <div className="about-cta-group">
+              <a
+                href="/Shams-Dev-Resume.pdf"
+                download="Shams-Dev-Resume.pdf"
+                className="btn btn-primary"
+              >
+                <i className="fa-solid fa-download"></i> Download CV
+              </a>
+              <a
+                href="/Shams-Dev-Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-outline"
+              >
+                <i className="fa-solid fa-file-pdf"></i> View Resume
+              </a>
+            </div>
           </div>
         </div>
       </div>

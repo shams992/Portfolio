@@ -1,5 +1,5 @@
 /* =========================================================
-   SHAMS BASHIR — PORTFOLIO (REACT + VITE)
+   SHAMS DEV — PORTFOLIO (REACT + VITE)
    Design tokens: Deep navy / Steel blue / Mist / Parchment
    Signature accents: Signal-Teal (#6FE3C9) & Warm Spark (#E9B872)
    ========================================================= */
@@ -821,6 +821,14 @@ h1, h2, h3, h4 {
   color: var(--text-0);
 }
 
+.about-cta-group {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
 /* ================= EXPERIENCE & BALOCHDEV ================= */
 .experience-section {
   position: relative;
@@ -1057,6 +1065,476 @@ h1, h2, h3, h4 {
   letter-spacing: 0.08em;
 }
 
+/* ================= RESUME & CAREER EXPERIENCE ================= */
+.resume-section {
+  position: relative;
+  background: var(--bg-1);
+  border-top: 1px solid var(--border-soft);
+  border-bottom: 1px solid var(--border-soft);
+  padding: 120px 0;
+  overflow: hidden;
+}
+
+.resume-bg-glow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 450px;
+  background: radial-gradient(ellipse at 50% 0%, rgba(111, 227, 201, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.resume-head-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.resume-nav-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 44px;
+}
+
+.resume-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  background: var(--surface);
+  border: 1px solid var(--border-soft);
+  color: var(--text-2);
+  transition: all .3s var(--ease);
+}
+
+.resume-tab-btn:hover {
+  color: var(--text-0);
+  border-color: var(--c-signal);
+}
+
+.resume-tab-btn.active {
+  background: rgba(111, 227, 201, 0.14);
+  border-color: var(--c-signal);
+  color: var(--c-signal);
+  box-shadow: 0 0 20px -5px rgba(111, 227, 201, 0.35);
+}
+
+.resume-grid-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.resume-module {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.resume-module-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.resume-module-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(111, 227, 201, 0.12);
+  border: 1px solid rgba(111, 227, 201, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--c-signal);
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.resume-module-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-0);
+  line-height: 1.2;
+}
+
+.resume-module-subtitle {
+  font-size: 0.88rem;
+  color: var(--text-2);
+  margin-top: 2px;
+}
+
+/* Experience timeline cards */
+.resume-timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 24px;
+}
+
+.resume-timeline-card {
+  position: relative;
+  background: var(--surface-card);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  backdrop-filter: blur(14px);
+  transition: transform .35s var(--ease), border-color .35s var(--ease), box-shadow .35s var(--ease);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.resume-timeline-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--c-signal), var(--c-secondary));
+}
+
+.resume-timeline-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-active);
+  box-shadow: var(--shadow-soft), var(--shadow-glow);
+}
+
+.resume-card-top {
+  margin-bottom: 14px;
+}
+
+.resume-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.resume-type-badge {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--border-soft);
+  color: var(--text-1);
+}
+
+.resume-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(111, 227, 201, 0.12);
+  border: 1px solid rgba(111, 227, 201, 0.3);
+  color: var(--c-signal);
+  font-size: 0.74rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
+.resume-role-title {
+  font-size: 1.28rem;
+  color: var(--text-0);
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.resume-company-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 0.88rem;
+  color: var(--text-2);
+}
+
+.resume-company-name {
+  color: var(--c-signal);
+  font-weight: 600;
+}
+
+.resume-meta-divider {
+  color: var(--border-soft);
+}
+
+.resume-period, .resume-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.resume-card-desc {
+  font-size: 0.94rem;
+  color: var(--text-1);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.resume-highlights {
+  background: var(--surface);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  margin-bottom: 18px;
+}
+
+.resume-highlights strong {
+  display: block;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-2);
+  margin-bottom: 8px;
+}
+
+.resume-highlights ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.resume-highlights li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.88rem;
+  color: var(--text-1);
+  line-height: 1.45;
+}
+
+.resume-highlights li i {
+  color: var(--c-signal);
+  font-size: 0.8rem;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.resume-tech-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.resume-pill {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(111, 227, 201, 0.08);
+  border: 1px solid rgba(111, 227, 201, 0.2);
+  color: var(--c-signal);
+}
+
+/* Education Cards Grid */
+.education-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.education-card {
+  background: var(--surface-card);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  backdrop-filter: blur(12px);
+  transition: transform .3s var(--ease), border-color .3s var(--ease);
+  display: flex;
+  flex-direction: column;
+}
+
+.education-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--c-signal);
+}
+
+.edu-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.edu-badge {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(111, 227, 201, 0.12);
+  border: 1px solid rgba(111, 227, 201, 0.25);
+  color: var(--c-signal);
+}
+
+.edu-period {
+  font-size: 0.8rem;
+  color: var(--text-2);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.edu-title {
+  font-size: 1.15rem;
+  color: var(--text-0);
+  font-weight: 600;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.edu-institution {
+  font-size: 0.88rem;
+  color: var(--c-signal);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.edu-desc {
+  font-size: 0.9rem;
+  color: var(--text-2);
+  line-height: 1.55;
+  margin-top: auto;
+}
+
+/* Core Skills Matrix */
+.core-skills-matrix {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.skill-matrix-card {
+  background: var(--surface-card);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-md);
+  padding: 22px;
+  backdrop-filter: blur(12px);
+  transition: transform .3s var(--ease), border-color .3s var(--ease);
+}
+
+.skill-matrix-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--c-signal);
+}
+
+.skill-matrix-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.skill-matrix-head i {
+  color: var(--c-signal);
+  font-size: 1.1rem;
+}
+
+.skill-matrix-head h4 {
+  font-size: 1.05rem;
+  color: var(--text-0);
+}
+
+.skill-matrix-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.matrix-tag {
+  font-size: 0.82rem;
+  font-family: var(--font-mono);
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--border-soft);
+  color: var(--text-1);
+  transition: all .2s;
+}
+
+.matrix-tag:hover {
+  border-color: var(--c-signal);
+  color: var(--c-signal);
+}
+
+/* Resume CTA Banner */
+.resume-cta-banner {
+  margin-top: 50px;
+  background: linear-gradient(135deg, rgba(111, 227, 201, 0.1), rgba(84, 119, 146, 0.15) 60%, rgba(18, 30, 43, 0.8));
+  border: 1.5px solid rgba(111, 227, 201, 0.35);
+  border-radius: var(--radius-lg);
+  padding: 32px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  box-shadow: var(--shadow-soft), var(--shadow-glow);
+}
+
+[data-theme="light"] .resume-cta-banner {
+  background: linear-gradient(135deg, rgba(111, 227, 201, 0.15), rgba(255, 255, 255, 0.95));
+}
+
+.resume-cta-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.resume-cta-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: rgba(111, 227, 201, 0.16);
+  border: 1px solid rgba(111, 227, 201, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: var(--c-signal);
+  flex-shrink: 0;
+}
+
+.resume-cta-content h3 {
+  font-size: 1.28rem;
+  color: var(--text-0);
+  margin-bottom: 4px;
+}
+
+.resume-cta-content p {
+  font-size: 0.92rem;
+  color: var(--text-2);
+}
+
+.resume-cta-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
 /* ================= SKILLS (REDESIGNED) ================= */
 .skills-controls {
   display: flex;
@@ -1089,115 +1567,97 @@ h1, h2, h3, h4 {
   box-shadow: 0 0 20px -5px rgba(111, 227, 201, 0.3);
 }
 
-.skills-cards-grid {
+.skills-minimal-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
   margin-bottom: 50px;
 }
 
-.skill-card {
+.skill-pill-card {
   position: relative;
   background: var(--surface-card);
   border: 1px solid var(--border-soft);
   border-radius: var(--radius-md);
-  padding: 24px;
-  backdrop-filter: blur(10px);
-  transition: transform .35s var(--ease), border-color .35s var(--ease), box-shadow .35s var(--ease);
+  padding: 18px 20px;
+  backdrop-filter: blur(12px);
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  transition: transform .3s var(--ease), border-color .3s var(--ease), box-shadow .3s var(--ease), background .3s var(--ease);
+  cursor: default;
   overflow: hidden;
 }
 
-.skill-card:hover {
-  transform: translateY(-5px);
-  border-color: var(--border-active);
-  box-shadow: 0 16px 36px -12px rgba(0, 0, 0, 0.5), var(--shadow-glow);
+.skill-pill-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 20% 50%, var(--skill-color, var(--c-signal)), transparent 70%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .35s var(--ease);
+  z-index: 0;
 }
 
-.skill-card-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 16px;
+.skill-pill-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--skill-color, var(--c-signal));
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.4), 0 0 24px -6px var(--skill-color, var(--c-signal));
 }
 
-.skill-icon-wrap {
-  width: 46px;
-  height: 46px;
+.skill-pill-card:hover::before {
+  opacity: 0.12;
+}
+
+.skill-pill-icon {
+  width: 44px;
+  height: 44px;
   border-radius: 12px;
-  background: rgba(111, 227, 201, 0.1);
-  border: 1px solid rgba(111, 227, 201, 0.2);
+  background: var(--surface);
+  border: 1px solid var(--border-soft);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--c-signal);
-  font-size: 1.4rem;
-  transition: transform .3s, background .3s;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+  transition: transform .3s var(--ease), border-color .3s var(--ease), background .3s var(--ease);
 }
 
-.skill-card:hover .skill-icon-wrap {
-  transform: scale(1.08) rotate(4deg);
-  background: rgba(111, 227, 201, 0.18);
+.skill-pill-card:hover .skill-pill-icon {
+  transform: scale(1.1) rotate(2deg);
+  border-color: var(--skill-color, var(--c-signal));
+  background: rgba(255, 255, 255, 0.05);
 }
 
-.skill-badge {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  padding: 3px 10px;
-  border-radius: 999px;
-  background: var(--surface);
-  border: 1px solid var(--border-soft);
-  color: var(--text-2);
+.tech-svg-icon {
+  display: block;
+  transition: filter .3s var(--ease);
 }
 
-.skill-name {
-  font-size: 1.12rem;
+.skill-pill-card:hover .tech-svg-icon {
+  filter: drop-shadow(0 0 8px var(--skill-color, var(--c-signal)));
+}
+
+.skill-pill-name {
+  font-family: var(--font-display);
+  font-size: 0.96rem;
   font-weight: 600;
   color: var(--text-0);
-  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+  position: relative;
+  z-index: 1;
+  transition: color .25s var(--ease);
 }
 
-.skill-desc {
-  font-size: 0.88rem;
-  color: var(--text-2);
-  line-height: 1.5;
-  margin-bottom: 20px;
-  flex-grow: 1;
+.skill-pill-card:hover .skill-pill-name {
+  color: #fff;
 }
 
-.skill-card-bottom {
-  margin-top: auto;
-}
-
-.skill-level-row {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.82rem;
-  margin-bottom: 6px;
-  color: var(--text-2);
-}
-
-.skill-level-row strong {
-  color: var(--c-signal);
-}
-
-.skill-progress-bar {
-  width: 100%;
-  height: 6px;
-  background: rgba(148, 180, 193, 0.15);
-  border-radius: 999px;
-  overflow: hidden;
-}
-
-.skill-progress-fill {
-  height: 100%;
-  background: linear-gradient(90deg, var(--c-secondary), var(--c-signal));
-  border-radius: 999px;
-  transition: width 1s var(--ease);
-}
 
 /* Redesigned Terminal Box */
 .terminal-wrapper {
@@ -2288,8 +2748,34 @@ h1, h2, h3, h4 {
   .about-info-grid {
     grid-template-columns: 1fr;
   }
-  .skills-cards-grid {
+  .skills-minimal-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+  }
+  .resume-timeline {
     grid-template-columns: 1fr;
+  }
+  .education-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .core-skills-matrix {
+    grid-template-columns: 1fr;
+  }
+  .resume-cta-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px;
+  }
+  .resume-cta-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .resume-cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  .resume-cta-buttons .btn {
+    width: 100%;
   }
   .project-grid {
     grid-template-columns: 1fr;

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { skillCategories, skillsData, terminalLines } from "../data/skills";
+import TechIcon from "./TechIcon";
 
 export default function Skills() {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -64,7 +65,7 @@ export default function Skills() {
             Skills &amp; <span className="text-gradient">Technologies</span>
           </h2>
           <p className="section-subtitle">
-            Modern full-stack technologies I use to build performant, accessible, and scalable web applications.
+            Modern full-stack technologies I use to build performant, accessible, and scalable digital products.
           </p>
         </div>
 
@@ -81,32 +82,18 @@ export default function Skills() {
           ))}
         </div>
 
-        {/* Redesigned Skill Cards Grid */}
-        <div className="skills-cards-grid">
+        {/* Minimalist, Icon-Focused Tech Grid */}
+        <div className="skills-minimal-grid">
           {filteredSkills.map((skill) => (
-            <div key={skill.name} className="skill-card">
-              <div className="skill-card-top">
-                <div className="skill-icon-wrap">
-                  <i className={skill.icon}></i>
-                </div>
-                <span className="skill-badge">{skill.badge}</span>
+            <div
+              key={skill.name}
+              className="skill-pill-card"
+              style={{ "--skill-color": skill.color }}
+            >
+              <div className="skill-pill-icon">
+                <TechIcon name={skill.name} size={32} />
               </div>
-
-              <h3 className="skill-name">{skill.name}</h3>
-              <p className="skill-desc">{skill.description}</p>
-
-              <div className="skill-card-bottom">
-                <div className="skill-level-row">
-                  <span>{skill.level}</span>
-                  <strong>{skill.percent}%</strong>
-                </div>
-                <div className="skill-progress-bar">
-                  <div
-                    className="skill-progress-fill"
-                    style={{ width: `${skill.percent}%` }}
-                  />
-                </div>
-              </div>
+              <span className="skill-pill-name">{skill.name}</span>
             </div>
           ))}
         </div>

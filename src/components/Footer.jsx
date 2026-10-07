@@ -1,8 +1,6 @@
 import React from "react";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
-
   const handleScrollToTop = (e) => {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -12,12 +10,8 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer-inner">
         <a href="#home" className="nav-logo" onClick={handleScrollToTop}>
-          <span className="logo-bracket">&lt;</span>Shams
-          <span className="logo-accent">.Bashir</span>
-          <span className="logo-bracket">/&gt;</span>
+          Shams<span className="logo-accent">.Dev</span>
         </a>
-
-        <p>Built with React.js, Vite &amp; Firebase • Engineered for Performance.</p>
 
         <div className="footer-social">
           <a
@@ -53,7 +47,7 @@ export default function Footer() {
         </div>
 
         <p className="footer-copy">
-          &copy; {currentYear} Shams Bashir. All rights reserved.
+          &copy; 2026 Shams Dev. All rights reserved.
         </p>
       </div>
     </footer>

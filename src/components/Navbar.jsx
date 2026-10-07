@@ -23,7 +23,7 @@ export default function Navbar({ activeSection, theme, toggleTheme }) {
   const navLinks = [
     { label: "Home", href: "#home", id: "home" },
     { label: "About", href: "#about", id: "about" },
-    { label: "Experience", href: "#experience", id: "experience" },
+    { label: "Resume", href: "#resume", id: "resume" },
     { label: "Skills", href: "#skills", id: "skills" },
     { label: "Projects", href: "#projects", id: "projects" },
     { label: "Services", href: "#services", id: "services" },
@@ -49,9 +49,7 @@ export default function Navbar({ activeSection, theme, toggleTheme }) {
             className="nav-logo"
             onClick={(e) => handleLinkClick(e, "#home")}
           >
-            <span className="logo-bracket">&lt;</span>Shams
-            <span className="logo-accent">.Bashir</span>
-            <span className="logo-bracket">/&gt;</span>
+            Shams<span className="logo-accent">.Dev</span>
           </a>
 
           <nav className="nav-links" id="navLinks">
@@ -77,11 +75,11 @@ export default function Navbar({ activeSection, theme, toggleTheme }) {
               <i className={theme === "light" ? "fa-solid fa-sun" : "fa-solid fa-moon"}></i>
             </button>
             <a
-              href="/Shams-Bashir-Resume.pdf"
-              download="Shams-Bashir-Resume.pdf"
+              href="/Shams-Dev-Resume.pdf"
+              download="Shams-Dev-Resume.pdf"
               className="btn btn-ghost nav-resume"
             >
-              <i className="fa-solid fa-arrow-down"></i> Resume
+              <i className="fa-solid fa-download"></i> Resume
             </a>
             <button
               className={`hamburger ${mobileMenuOpen ? "open" : ""}`}
@@ -109,12 +107,12 @@ export default function Navbar({ activeSection, theme, toggleTheme }) {
           </a>
         ))}
         <a
-          href="/Shams-Bashir-Resume.pdf"
-          download="Shams-Bashir-Resume.pdf"
+          href="/Shams-Dev-Resume.pdf"
+          download="Shams-Dev-Resume.pdf"
           className="btn btn-primary mobile-resume-btn"
           onClick={() => setMobileMenuOpen(false)}
         >
-          <i className="fa-solid fa-arrow-down"></i> Download Resume
+          <i className="fa-solid fa-download"></i> Download CV
         </a>
       </div>
     </>

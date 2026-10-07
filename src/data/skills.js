@@ -1,5 +1,5 @@
 export const skillCategories = [
-  { id: "all", label: "All Skills" },
+  { id: "all", label: "All Technologies" },
   { id: "frontend", label: "Frontend" },
   { id: "backend", label: "Backend" },
   { id: "database", label: "Database & Cloud" },
@@ -11,198 +11,118 @@ export const skillsData = [
   {
     name: "React.js",
     category: "frontend",
-    level: "Advanced",
-    percent: 92,
-    icon: "fa-brands fa-react",
-    badge: "Core Stack",
-    description: "Component-based architecture, React hooks, state management, custom hooks, and modern frontend application development."
+    color: "#61DAFB"
   },
   {
     name: "JavaScript (ES6+)",
     category: "frontend",
-    level: "Advanced",
-    percent: 92,
-    icon: "fa-brands fa-js",
-    badge: "Language",
-    description: "Modern ES6+ syntax, asynchronous programming, Promises, Fetch API, DOM manipulation, and event-driven architecture."
+    color: "#F7DF1E"
+  },
+  {
+    name: "TypeScript",
+    category: "frontend",
+    color: "#3178C6"
   },
   {
     name: "Tailwind CSS",
     category: "frontend",
-    level: "Proficient",
-    percent: 90,
-    icon: "fa-solid fa-wind",
-    badge: "Styling",
-    description: "Utility-first modern styling, responsive layouts, theme customization, sleek dark modes, and rapid UI development."
+    color: "#38BDF8"
   },
   {
-    name: "HTML5 & Semantic Web",
+    name: "HTML5",
     category: "frontend",
-    level: "Expert",
-    percent: 95,
-    icon: "fa-brands fa-html5",
-    badge: "Markup",
-    description: "Clean semantic markup, SEO best practices, accessibility standards (a11y), and proper document structure."
+    color: "#E34F26"
   },
   {
-    name: "CSS3 & Modern Layouts",
+    name: "CSS3",
     category: "frontend",
-    level: "Expert",
-    percent: 94,
-    icon: "fa-brands fa-css3-alt",
-    badge: "Styling",
-    description: "CSS Grid, Flexbox, custom properties (CSS variables), keyframe animations, glassmorphism, and responsive design."
+    color: "#1572B6"
   },
   {
     name: "Bootstrap 5",
     category: "frontend",
-    level: "Proficient",
-    percent: 88,
-    icon: "fa-brands fa-bootstrap",
-    badge: "Framework",
-    description: "Responsive grid systems, utility classes, ready-to-use component styling, and fast responsive prototyping."
+    color: "#7952B3"
   },
   {
-    name: "Responsive & Mobile-First",
+    name: "Responsive UI",
     category: "frontend",
-    level: "Expert",
-    percent: 94,
-    icon: "fa-solid fa-mobile-screen",
-    badge: "UX Core",
-    description: "Zero horizontal overflow, fluid typography, breakpoint systems, cross-browser compatibility, and touch-first interactions."
+    color: "#6FE3C9"
   },
 
   // Backend
   {
     name: "Node.js",
     category: "backend",
-    level: "Proficient",
-    percent: 88,
-    icon: "fa-brands fa-node-js",
-    badge: "Runtime",
-    description: "Server-side JavaScript runtime, asynchronous event loops, npm package management, and backend scripting."
+    color: "#5FA04E"
   },
   {
     name: "Express.js",
     category: "backend",
-    level: "Proficient",
-    percent: 86,
-    icon: "fa-solid fa-server",
-    badge: "Backend",
-    description: "Fast, unopinionated routing, middleware pipelines, RESTful API design, request handling, and JSON response controllers."
+    color: "#C7D3DA"
   },
   {
-    name: "REST APIs & Integration",
+    name: "REST APIs",
     category: "backend",
-    level: "Proficient",
-    percent: 88,
-    icon: "fa-solid fa-network-wired",
-    badge: "Architecture",
-    description: "API design, HTTP methods, client-server communication, JSON schemas, headers, status codes, and external service consumption."
+    color: "#6FE3C9"
   },
 
   // Database & Cloud
   {
     name: "Supabase",
     category: "database",
-    level: "Advanced",
-    percent: 92,
-    icon: "fa-solid fa-bolt",
-    badge: "BaaS & SQL",
-    description: "PostgreSQL database, Row Level Security (RLS), Supabase Auth, realtime subscriptions, and database integration (used for Baloch Export Hub)."
+    color: "#3ECF8E"
   },
   {
     name: "MongoDB",
     category: "database",
-    level: "Proficient",
-    percent: 88,
-    icon: "fa-solid fa-leaf",
-    badge: "NoSQL DB",
-    description: "Document-oriented NoSQL database, schema design, collections, aggregation pipelines, and Node.js backend integration."
+    color: "#47A248"
   },
   {
     name: "Cloud Firestore",
     category: "database",
-    level: "Advanced",
-    percent: 93,
-    icon: "fa-solid fa-database",
-    badge: "NoSQL DB",
-    description: "Real-time document database, structured collections, indexes, subcollections, server timestamps, and reactive query listeners."
+    color: "#FFA611"
   },
   {
-    name: "Firebase Authentication",
+    name: "Firebase Auth",
     category: "database",
-    level: "Advanced",
-    percent: 92,
-    icon: "fa-solid fa-shield-halved",
-    badge: "Auth & Security",
-    description: "Email/password auth, social sign-in, user sessions, security rules, and role-based permissions."
+    color: "#FFCA28"
   },
   {
     name: "Firebase Storage",
     category: "database",
-    level: "Proficient",
-    percent: 87,
-    icon: "fa-solid fa-cloud-arrow-up",
-    badge: "Cloud Storage",
-    description: "Secure user media uploads, document storage, download URLs, and storage access rules."
-  },
-  {
-    name: "Firebase Analytics & Console",
-    category: "database",
-    level: "Proficient",
-    percent: 85,
-    icon: "fa-solid fa-chart-line",
-    badge: "Monitoring",
-    description: "Event tracking, user conversion flows, deployment configurations, and project console management."
+    color: "#F58220"
   },
 
   // Tools & Workflow
   {
-    name: "Git & Version Control",
+    name: "Git",
     category: "tools",
-    level: "Advanced",
-    percent: 90,
-    icon: "fa-brands fa-git-alt",
-    badge: "VCS",
-    description: "Branching strategies, clean commit histories, staging, merging, conflict resolution, and collaborative workflows."
+    color: "#F05032"
   },
   {
     name: "GitHub",
     category: "tools",
-    level: "Advanced",
-    percent: 90,
-    icon: "fa-brands fa-github",
-    badge: "DevOps",
-    description: "Remote repositories, GitHub Pages, pull requests, issue tracking, and open-source contributions."
+    color: "#FFFFFF"
   },
   {
-    name: "VS Code & Cursor AI",
+    name: "VS Code",
     category: "tools",
-    level: "Expert",
-    percent: 95,
-    icon: "fa-solid fa-laptop-code",
-    badge: "IDE & AI",
-    description: "Power-user developer workflow, debugging, extensions, AI-augmented coding, and rapid problem-solving."
+    color: "#007ACC"
   },
   {
     name: "Vite",
     category: "tools",
-    level: "Advanced",
-    percent: 90,
-    icon: "fa-solid fa-bolt",
-    badge: "Build Tool",
-    description: "Lightning-fast HMR (Hot Module Replacement), ES module bundling, optimized production builds, and dev server setup."
+    color: "#646CFF"
   }
 ];
 
 export const terminalLines = [
   "$ whoami",
-  "shams_bashir — Full Stack Web & App Developer",
+  "shams_dev — Full Stack Web & App Developer",
   "",
   "$ cat current_stack.json",
   "{",
-  '  "frontend": ["React.js", "JavaScript (ES6+)", "Tailwind CSS", "Bootstrap 5"],',
+  '  "frontend": ["React.js", "JavaScript (ES6+)", "TypeScript", "Tailwind CSS"],',
   '  "backend": ["Node.js", "Express.js", "REST APIs"],',
   '  "database": ["Supabase", "MongoDB", "Cloud Firestore", "Firebase Auth"],',
   '  "active_projects": ["Baloch Export Hub", "BalochDev"],',

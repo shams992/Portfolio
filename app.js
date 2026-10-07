@@ -1,5 +1,5 @@
 // ============================================================
-// Shams Bashir Portfolio — core interactions
+// Shams Dev Portfolio — core interactions
 // ============================================================
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("year").textContent = new Date().getFullYear();
@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
   /* ---------------- Terminal typing effect ---------------- */
   const terminalLines = [
     "$ whoami",
-    "shams_bashir — full stack developer",
+    "shams_dev — full stack developer",
     "",
     "$ cat stack.json",
     "{",
