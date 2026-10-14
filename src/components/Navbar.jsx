@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import SDLogo from "./SDLogo";
 
 export default function Navbar({ activeSection, theme, toggleTheme }) {
   const [scrolled, setScrolled] = useState(false);
@@ -48,8 +49,9 @@ export default function Navbar({ activeSection, theme, toggleTheme }) {
             href="#home"
             className="nav-logo"
             onClick={(e) => handleLinkClick(e, "#home")}
+            aria-label="Home"
           >
-            Shams<span className="logo-accent">.Dev</span>
+            <SDLogo />
           </a>
 
           <nav className="nav-links" id="navLinks">

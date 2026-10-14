@@ -1,16 +1,27 @@
 import React from "react";
 
 export default function ProjectCard({ project, onOpenModal }) {
+  const hasLiveDemo = Boolean(project.demo && project.demo !== "#");
+
+  const handleCardClick = (e) => {
+    if (hasLiveDemo) {
+      window.open(project.demo, "_blank", "noopener,noreferrer");
+    } else {
+      onOpenModal(project);
+    }
+  };
+
   return (
     <article
       className="project-card"
-      onClick={() => onOpenModal(project)}
+      onClick={handleCardClick}
       tabIndex={0}
       role="button"
+      title={hasLiveDemo ? `Open ${project.title} live website` : `View ${project.title} details`}
       onKeyDown={(e) => {
         if (e.key === "Enter" || e.key === " ") {
           e.preventDefault();
-          onOpenModal(project);
+          handleCardClick(e);
         }
       }}
     >
@@ -83,7 +94,21 @@ export default function ProjectCard({ project, onOpenModal }) {
       </div>
 
       <div className="project-info">
-        <h3>{project.title}</h3>
+        <h3>
+          {project.title}
+          {hasLiveDemo && (
+            <i
+              className="fa-solid fa-arrow-up-right-from-square"
+              style={{
+                fontSize: "0.72em",
+                marginLeft: "8px",
+                opacity: 0.65,
+                verticalAlign: "middle"
+              }}
+              aria-hidden="true"
+            />
+          )}
+        </h3>
         <p>
           {project.desc.length > 95
             ? `${project.desc.slice(0, 95)}...`

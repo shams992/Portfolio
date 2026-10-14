@@ -21,24 +21,23 @@ export const projectsData = [
     ]
   },
   {
-    id: "balochdev",
-    title: "BalochDev",
-    tagline: "AI, web & mobile studio empowering regional tech",
-    status: "Working on BalochDev",
-    ongoing: true,
-    badge: "Technology Studio",
-    category: "Initiative",
-    urlTag: "balochdev.com",
-    desc: "A technology studio creating modern web, mobile, and AI solutions, empowering regional commerce and cultural digital products.",
-    detailedDesc: "BalochDev is a forward-thinking digital product studio building high-performance web applications, mobile platforms, and AI-powered tools that solve real-world problems. Flagship initiatives include Baloch Export Hub, modern component architectures, and regional digital infrastructure.",
-    img: "/images/balochdev-brand.png",
-    tech: ["React.js", "JavaScript", "Supabase", "Cloud Architecture", "UI/UX Systems"],
-    demo: "https://balochdev.com",
+    id: "library-management-saas",
+    title: "Library Management SaaS",
+    tagline: "Cloud-based library catalog, patron management & circulation workflows",
+    featured: false,
+    badge: "SaaS Platform",
+    category: "Management",
+    urlTag: "library-management-frontend-baloch12.vercel.app",
+    desc: "A modern cloud-based library management SaaS platform designed to streamline digital cataloging, member subscriptions, book borrowing, and circulation tracking.",
+    detailedDesc: "Library Management SaaS is an enterprise-grade digital library and resource management system engineered for modern educational institutions and libraries. Features include catalog indexing, circulation tracking, patron management, issue and return date tracking, fine calculation, and role-based administrative workflows.",
+    img: "/images/library-management-saas.jpg",
+    tech: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Node.js", "REST APIs"],
+    demo: "https://library-management-frontend-baloch12.vercel.app/",
     code: "https://github.com/shams992",
     highlights: [
-      "Official technology brand and digital product studio",
-      "Building high-performance web applications and AI tools",
-      "Creators of Baloch Export Hub for regional commerce"
+      "Cloud-hosted catalog indexing and real-time inventory management",
+      "Automated borrowing, return, and overdue circulation tracking",
+      "Modern role-based access for librarians, staff, and patrons"
     ]
   },
   {
@@ -168,6 +167,5 @@ export const projectCategories = [
   "Featured",
   "Web App",
   "E-Commerce",
-  "Management",
-  "Initiative"
+  "Management"
 ];

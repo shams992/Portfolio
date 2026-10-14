@@ -301,6 +301,90 @@ h1, h2, h3, h4 {
   display: inline-flex;
   align-items: center;
   gap: 2px;
+  text-decoration: none;
+  transition: transform 0.35s var(--ease);
+}
+
+.nav-logo:hover {
+  transform: translateY(-2px);
+}
+
+.sd-logo-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  transition: transform 0.35s var(--ease), filter 0.35s var(--ease);
+}
+
+.nav-logo:hover .sd-logo-container {
+  filter: drop-shadow(0 0 14px rgba(111, 227, 201, 0.5));
+}
+
+.sd-logo-svg {
+  display: block;
+  width: 42px;
+  height: 42px;
+  overflow: visible;
+}
+
+.sd-logo-frame {
+  transition: stroke 0.35s var(--ease), fill 0.35s var(--ease);
+}
+
+.nav-logo:hover .sd-logo-frame {
+  stroke: var(--c-signal);
+}
+
+.sd-glyph-s {
+  transition: fill 0.35s var(--ease);
+}
+
+.sd-glyph-d {
+  fill: var(--text-0);
+  transition: fill 0.35s var(--ease);
+}
+
+.sd-glyph-dot {
+  fill: var(--c-signal);
+  animation: sdPulseDot 3s ease-in-out infinite;
+}
+
+@keyframes sdPulseDot {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.65;
+    transform: scale(0.92);
+  }
+}
+
+/* Light Mode Overrides for SD Logo */
+[data-theme="light"] .sd-logo-frame {
+  fill: rgba(33, 52, 72, 0.05);
+  stroke: rgba(33, 52, 72, 0.18);
+}
+
+[data-theme="light"] .nav-logo:hover .sd-logo-frame {
+  stroke: #169379;
+}
+
+[data-theme="light"] .nav-logo:hover .sd-logo-container {
+  filter: drop-shadow(0 0 12px rgba(22, 147, 121, 0.35));
+}
+
+[data-theme="light"] .sd-glyph-s {
+  fill: #169379;
+}
+
+[data-theme="light"] .sd-glyph-d {
+  fill: #182430;
+}
+
+[data-theme="light"] .sd-glyph-dot {
+  fill: #169379;
 }
 
 .logo-bracket {
@@ -2426,5 +2510,9 @@ h1, h2, h3, h4 {
     bottom: 18px;
     width: 42px;
     height: 42px;
+  }
+  .sd-logo-svg {
+    width: 38px;
+    height: 38px;
   }
 }
