@@ -134,8 +134,8 @@ export default function TechIcon({ name, size = 32, className = "" }) {
     case "api":
       return (
         <svg {...iconProps} viewBox="0 0 24 24" fill="none">
-          <rect x="2" y="5" width="20" height="14" rx="3" stroke="#6FE3C9" strokeWidth="1.8" />
-          <path d="M7 12h10M13 8l4 4-4 4" stroke="#6FE3C9" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+          <rect x="2" y="5" width="20" height="14" rx="3" stroke="#E5C29F" strokeWidth="1.8" />
+          <path d="M7 12h10M13 8l4 4-4 4" stroke="#E5C29F" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       );
 
@@ -295,17 +295,18 @@ export default function TechIcon({ name, size = 32, className = "" }) {
     case "responsive":
       return (
         <svg {...iconProps} viewBox="0 0 24 24" fill="none">
-          <rect x="7" y="2" width="10" height="20" rx="2.5" stroke="#6FE3C9" strokeWidth="1.8" />
-          <line x1="10.5" y1="18.5" x2="13.5" y2="18.5" stroke="#6FE3C9" strokeWidth="1.8" strokeLinecap="round" />
+          <rect x="7" y="2" width="10" height="20" rx="2.5" stroke="#E5C29F" strokeWidth="1.8" />
+          <line x1="10.5" y1="18.5" x2="13.5" y2="18.5" stroke="#E5C29F" strokeWidth="1.8" strokeLinecap="round" />
         </svg>
       );
 
+    case "responsive ui":
     default:
       return (
         <svg {...iconProps} viewBox="0 0 24 24" fill="none">
           <path
             d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-            stroke="#6FE3C9"
+            stroke="#E5C29F"
             strokeWidth="1.8"
             strokeLinecap="round"
             strokeLinejoin="round"

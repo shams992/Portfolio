@@ -77,8 +77,8 @@ export default function Hero({ theme }) {
     window.addEventListener("resize", resize);
 
     const isLight = theme === "light";
-    const lineColor = isLight ? "rgba(84, 119, 146, " : "rgba(111, 227, 201, ";
-    const dotColor = isLight ? "rgba(59, 77, 92, 0.45)" : "rgba(148, 180, 193, 0.55)";
+    const lineColor = isLight ? "rgba(192, 141, 82, " : "rgba(229, 194, 159, ";
+    const dotColor = isLight ? "rgba(184, 131, 73, 0.45)" : "rgba(229, 194, 159, 0.65)";
 
     const draw = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -196,25 +196,32 @@ export default function Hero({ theme }) {
         </div>
 
         <div className="hero-right">
-          <div className="portrait-frame">
-            <img
-              src="/images/shms.png"
-              alt="Shams Dev — Full Stack Web & App Developer"
-              className="portrait-img"
-              loading="eager"
-            />
-            <div className="portrait-badge portrait-badge-top">
-              <i className="fa-solid fa-code"></i>
-              <div>
-                <strong>8+</strong>
-                <span>Months Exp.</span>
+          <div className="portrait-wrapper">
+            <div className="portrait-ambient-glow"></div>
+            <div className="portrait-frame">
+              <img
+                src="/images/shms.png"
+                alt="Shams Dev — Full Stack Web & App Developer"
+                className="portrait-img"
+                loading="eager"
+              />
+              <div className="portrait-badge portrait-badge-top">
+                <i className="fa-solid fa-code"></i>
+                <div>
+                  <strong>8+</strong>
+                  <span>Months Exp.</span>
+                </div>
               </div>
-            </div>
-            <div className="portrait-badge portrait-badge-bottom">
-              <i className="fa-solid fa-bolt"></i>
-              <div>
-                <strong>6+</strong>
-                <span>Projects Shipped</span>
+              <div className="portrait-badge portrait-badge-bottom">
+                <i className="fa-solid fa-bolt"></i>
+                <div>
+                  <strong>6+</strong>
+                  <span>Projects Shipped</span>
+                </div>
+              </div>
+              <div className="portrait-badge portrait-badge-status">
+                <span className="pulse-indicator"></span>
+                <span>BalochDev Core</span>
               </div>
             </div>
           </div>

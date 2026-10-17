@@ -46,7 +46,7 @@ export const skillsData = [
   {
     name: "Responsive UI",
     category: "frontend",
-    color: "#6FE3C9"
+    color: "#E5C29F"
   },
 
   // Backend
@@ -63,7 +63,7 @@ export const skillsData = [
   {
     name: "REST APIs",
     category: "backend",
-    color: "#6FE3C9"
+    color: "#E5C29F"
   },
 
   // Database & Cloud

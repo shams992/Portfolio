@@ -91,7 +91,7 @@ export default function Skills() {
               style={{ "--skill-color": skill.color }}
             >
               <div className="skill-pill-icon">
-                <TechIcon name={skill.name} size={32} />
+                <TechIcon name={skill.name} size={28} />
               </div>
               <span className="skill-pill-name">{skill.name}</span>
             </div>

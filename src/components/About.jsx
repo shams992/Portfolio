@@ -20,16 +20,21 @@ export default function About() {
 
         <div className="about-grid">
           <div className="about-visual">
-            <div className="about-img-wrap">
-              <img
-                src="/images/balochdev-brand.png"
-                alt="BalochDev — Official Technology Studio & Brand"
-                loading="lazy"
-              />
-              <div className="about-img-card">
-                <i className="fa-solid fa-layer-group"></i>
-                <p>
-                  Building <strong>Baloch Export Hub</strong> &amp; contributing at <strong>BalochDev</strong>
+            <div className="about-visual-card">
+              <div className="about-img-wrap">
+                <img
+                  src="/images/balochdev-brand.png"
+                  alt="BalochDev — Official Technology Studio"
+                  loading="lazy"
+                />
+              </div>
+              <div className="about-card-footer">
+                <div className="about-footer-badge">
+                  <span className="live-pulse"></span>
+                  <span>Technology Studio</span>
+                </div>
+                <p className="about-footer-text">
+                  Engineering <strong>Baloch Export Hub</strong> &amp; regional platforms at <strong>BalochDev</strong>
                 </p>
               </div>
             </div>

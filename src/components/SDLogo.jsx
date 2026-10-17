@@ -15,22 +15,22 @@ export default function SDLogo({ size = 42, className = "" }) {
         <defs>
           {/* Subtle glassmorphic background gradient */}
           <linearGradient id="sdBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="rgba(111, 227, 201, 0.16)" />
-            <stop offset="60%" stopColor="rgba(84, 119, 146, 0.10)" />
-            <stop offset="100%" stopColor="rgba(18, 30, 43, 0.75)" />
+            <stop offset="0%" stopColor="rgba(229, 194, 159, 0.22)" />
+            <stop offset="60%" stopColor="rgba(208, 159, 110, 0.12)" />
+            <stop offset="100%" stopColor="rgba(18, 19, 23, 0.85)" />
           </linearGradient>
 
           {/* Accent border gradient */}
           <linearGradient id="sdBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#6FE3C9" stopOpacity="0.85" />
-            <stop offset="50%" stopColor="rgba(148, 180, 193, 0.35)" />
-            <stop offset="100%" stopColor="rgba(111, 227, 201, 0.40)" />
+            <stop offset="0%" stopColor="#E5C29F" stopOpacity="0.9" />
+            <stop offset="50%" stopColor="rgba(208, 159, 110, 0.4)" />
+            <stop offset="100%" stopColor="rgba(229, 194, 159, 0.45)" />
           </linearGradient>
 
           {/* S letter gradient */}
           <linearGradient id="sdLetterSGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#6FE3C9" />
-            <stop offset="100%" stopColor="#8EEBD7" />
+            <stop offset="0%" stopColor="#F7EBE0" />
+            <stop offset="100%" stopColor="#E5C29F" />
           </linearGradient>
         </defs>
 
@@ -93,7 +93,7 @@ export default function SDLogo({ size = 42, className = "" }) {
           cy="28.5"
           r="1.9"
           className="sd-glyph-dot"
-          fill="#6FE3C9"
+          fill="#E5C29F"
         />
       </svg>
     </span>
